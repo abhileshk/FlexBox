@@ -1,0 +1,108 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px;
+    background: white;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: #ff6699;
+}
+
+/* Product Box */
+.product {
+    border: 1px solid #f208e2e2;
+    border-radius: 0px;
+    padding: 30px;
+    margin: 15px 0;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* On Click Expand */
+.product.active {
+    background: hsl(331, 100%, 95%);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: scale(1.05);
+}
+
+/* Product Options */
+.options {
+    display: none;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+/* Show Options when Active */
+.product.active .options {
+    display: flex;
+}
+
+/* Labels and Select */
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+select {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+/* Pricing and Discounts */
+.price {
+    color: #333;
+    font-size: 18px;
+}
+
+.discount {
+    color: #ff6699;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+del {
+    color: #999;
+    font-size: 14px;
+}
+
+/* Button */
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: #ff6699;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #ff6699
+
+/* Free Delivery and Total */
+.free-delivery, .total {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    
+}

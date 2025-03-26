@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expandable Product Boxes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>YAY! It’s BOGO</h2>
+
+    <!-- Product 1 -->
+    <div class="product" data-price="10" onclick="toggleBox(this)">
+        <label>
+            <input type="radio" name="unit" value="1">
+            <span>1 Unit <span class="discount">10% Off</span></span>
+            <span class="price">$10.00 USD <del>$24.00 USD</del></span>
+        </label>
+        <div class="options">
+            <div>
+                <label>Size:</label>
+                <select>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                </select>
+                <label>Colour:</label>
+                <select>
+                    <option>Black</option>
+                    <option>White</option>
+                    <option>Blue</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product" data-price="18" onclick="toggleBox(this)">
+        <label>
+            <input type="radio" name="unit" value="2">
+            <span>2 Units <span class="discount">20% Off</span> <span class="tag">MOST POPULAR</span></span>
+            <span class="price">$18.00 USD <del>$24.00 USD</del></span>
+        </label>
+        <div class="options">
+            <div>
+                <label>Size:</label>
+                <select>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                </select>
+                <label>Colour:</label>
+                <select>
+                    <option>Black</option>
+                    <option>White</option>
+                    <option>Blue</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product" data-price="24" onclick="toggleBox(this)">
+        <label>
+            <input type="radio" name="unit" value="3">
+            <span>3 Units <span class="discount">30% Off</span></span>
+            <span class="price">$24.00 USD <del>$24.00 USD</del></span>
+        </label>
+        <div class="options">
+            <div>
+                <label>Size:</label>
+                <select>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                </select>
+                <label>Colour:</label>
+                <select>
+                    <option>Black</option>
+                    <option>White</option>
+                    <option>Blue</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="free-delivery">Free Delivery</div>
+    <div class="total">Total: <span id="total-price">$0.00 USD</span></div>
+
+    <button onclick="addToCart()">+ Add to Cart</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
